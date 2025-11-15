@@ -27,7 +27,7 @@ Navigate to the `env_create` directory and run the environment setup script:
 
 ```bash
 cd env_create
-sh setup_llama_env.sh
+sbatch setup_llama_env.sh
 ```
 
 This will create a Conda environment named:
