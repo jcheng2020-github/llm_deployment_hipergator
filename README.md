@@ -76,4 +76,4 @@ The Python script `run_llama_multi_chat.py` handles loading the model and genera
 
 ---
 
-If you'd like, I can integrate this directly into your existing README.md in fully polished formatting.
+* **For further questions, please contact Junfu Cheng at [junfu.cheng@ufl.edu]
