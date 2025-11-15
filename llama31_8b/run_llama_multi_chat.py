@@ -41,7 +41,6 @@ def main():
     # Simple test generation
     system_prompt = "You are a helpful AI assistant."
     user_prompt = "Briefly explain what a GPU does."
-    user_prompt = "help Junfu Cheng who is a graduate research assistant at UF to write a statement of purpose for applying to a PhD program in ECE. The statement should highlight his research experience, academic achievements, and career goals. It should also convey his passion for computer science and his motivation for pursuing a PhD."
 
     messages = [
         {"role": "system", "content": system_prompt},
