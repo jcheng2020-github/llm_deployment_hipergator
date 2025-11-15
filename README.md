@@ -76,4 +76,4 @@ The Python script `run_llama_multi_chat.py` handles loading the model and genera
 
 ---
 
-* **For further questions, please contact Junfu Cheng at [junfu.cheng@ufl.edu]
+* **For further questions, please contact Junfu Cheng at [junfu.cheng@ufl.edu]**
