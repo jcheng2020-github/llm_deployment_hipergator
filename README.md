@@ -26,7 +26,7 @@ Before using these scripts on HiPerGator, ensure you have:
 Navigate to the `env_create` directory and run the environment setup script:
 
 ```bash
-cd env_create
+cd /path/to/repository_folder/env_create
 sbatch setup_llama_env.sh
 ```
 
@@ -47,7 +47,7 @@ Confirm that your job can successfully request and use a **B200 GPU**.
 From inside `test_b200/`, run:
 
 ```bash
-cd test_b200
+cd /path/to/repository_folder/test_b200
 sbatch test_b200.sh
 ```
 
@@ -60,7 +60,7 @@ This script prints GPU information using `nvidia-smi` and ensures that the B200 
 After verifying the environment and GPU, run the multi-GPU Llama-3.1-8B job:
 
 ```bash
-cd llama31_8b
+cd /path/to/repository_folder/llama31_8b
 sbatch run_llama_multi_b200.sh
 ```
 
