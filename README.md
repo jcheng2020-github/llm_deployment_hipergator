@@ -21,7 +21,29 @@ Before using these scripts on HiPerGator, ensure you have:
 
 ## Usage Guide
 
-### **1. Create the Conda Environment**
+### **1. Finding a Suitable Location on HiPerGator**
+
+Before cloning this repository, make sure you are **not** inside your home directory (`/home/<gatorlink>`), which has strict storage limits. Instead, use either:
+
+* **Blue storage:** `/blue/<groupname>/<gatorlink>/`
+* **Orange storage:** `/orange/<groupname>/<gatorlink>/`
+
+Create a folder there (if needed) and clone the repository:
+
+```bash
+cd /blue/<groupname>/<gatorlink>/
+# or
+cd /orange/<groupname>/<gatorlink>/
+
+git clone https://github.com/<your_username>/<repo_name>.git
+cd <repo_name>
+```
+
+You can check your available storage and large directories using the `ncdu` command.
+
+This ensures all LLM models and cache files download into a safe, high-capacity workspace.
+
+### **2. Create the Conda Environment**
 
 Navigate to the `env_create` directory and run the environment setup script:
 
@@ -40,7 +62,7 @@ which contains the dependencies needed for running Llama-3.1-8B on B200 GPUs.
 
 ---
 
-### **2. Test GPU Availability (Optional but Recommended)**
+### **3. Test GPU Availability (Optional but Recommended)**
 
 Confirm that your job can successfully request and use a **B200 GPU**.
 
@@ -55,7 +77,7 @@ This script prints GPU information using `nvidia-smi` and ensures that the B200 
 
 ---
 
-### **3. Run Llama-3.1-8B Inference on B200 GPUs**
+### **4. Run Llama-3.1-8B Inference on B200 GPUs**
 
 After verifying the environment and GPU, run the multi-GPU Llama-3.1-8B job:
 
